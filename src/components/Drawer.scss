@@ -1,0 +1,57 @@
+#root {
+  // Scss variables which we gonna assign using
+  // useState and JavaScript in reactJS
+  $width: 250px;
+  $display: auto;
+  $justify: end;
+  $margin: 0px;
+}
+.drawer {
+  background-color: #f7fcff;
+  border-right: 2px solid #f4f8fa;
+  height: 100%;
+  min-height: 100vh;
+  width: var(--width);
+  display: flex;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    height: auto;
+  }
+}
+.drawer__optionButtons {
+  border: none;
+  background: transparent;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: var(--display);
+}
+.drawer__switcher {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.drawer__logo {
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  width: 45px;
+}
+.drawer__optionImg {
+  width: 26px;
+  height: 26px;
+}
+.drawer__optionContainer {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: var(--justify);
+  margin-bottom: 15px;
+  margin-left: var(--margin);
+  padding: 10px 20px;
+  width: 100%;
+}

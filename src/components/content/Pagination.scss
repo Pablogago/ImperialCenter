@@ -1,0 +1,27 @@
+.svgIcon {
+	fill: #00000054;
+	stroke: #8d8d8d;
+	width: 26px;
+	height: 26px;
+}
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 25px;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 25px;
+	letter-spacing: 0.25px;
+}
+.pagination__previousButton {
+	margin-right: 12px;
+}
+.pagination__nextButton {
+	margin-left: 12px;
+}
+.paginationButton {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}

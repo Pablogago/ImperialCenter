@@ -1,0 +1,54 @@
+.magnifyingGlassIcon {
+	width: 15px;
+	height: 15px;
+	margin: 0 7px;
+	fill: #878787;
+	stroke: black;
+}
+.header__input {
+	border: none;
+	font-size: 18px;
+	padding: 6px;
+	&:focus-visible {
+		outline: none;
+	}
+}
+.header {
+	margin-left: 20px;
+	h2 {
+		text-transform: capitalize;
+		font-size: 35px;
+	}
+}
+
+.header__form {
+	display: flex;
+	@media (max-width: 880px) {
+		flex-direction: column;
+	}
+	form {
+		border: 1px solid #8b8b8b;
+		border-radius: 6px;
+		width: 264px;
+		&:focus-within {
+			outline: 1px solid #505050;
+		}
+	}
+}
+.header__select {
+	margin-left: auto;
+	display: flex;
+	align-items: flex-end;
+	@media (max-width: 880px) {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	span {
+		margin-right: 8px;
+	}
+	select {
+		border-radius: 5px;
+		border: 1px solid #a1a1a1;
+		padding: 4px;
+	}
+}
