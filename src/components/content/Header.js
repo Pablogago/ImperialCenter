@@ -33,8 +33,9 @@ function Header({ selectValue, setSelectValue, sortPage,dataShown,menuSelected }
 				<div className="header__select">
 					<span>Name</span>
 					<select	data-testid="select" datvalue={selectValue} onChange={(e) => handleChangeSelect(e.target.value)}>
+					<option value="desc">Desc</option>
 						<option value="asc">Asc</option>
-						<option value="desc">Desc</option>
+
 					</select>
 				</div>
 			</div>
